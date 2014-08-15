@@ -11,7 +11,6 @@ public class Debug1 implements CommandExecutor {
 	public boolean onCommand(CommandSender sender, Command cmd, String label,
 			String[] args) {
 		Player p = (Player) sender;
-		p.sendMessage(ChatColor.LIGHT_PURPLE + "Hariss is gay");
 		p.openInventory(GUIManager.getInstance().getGUI("AdminGUI").getInventory());
 		return false;
 	}

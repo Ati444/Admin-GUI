@@ -39,7 +39,8 @@ public abstract class GUI {
 	}
 
 	public ItemStack getIcon(IconType type) {
-		return IconManager.getInstance().getIcon(type).getItemStack();
+		if (IconManager.getInstance().getIcon(type).getItemStack() != null) return IconManager.getInstance().getIcon(type).getItemStack();
+		else return null;
 	}
 
 	public Inventory getInventory() {
